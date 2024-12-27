@@ -6,7 +6,7 @@ namespace Calculator
     {
         public static void Main(string[] args)
         {
-            MainMenu.GetMenuChoice();
+            MainMenu.GetMenuChoice(); 
         }
     }
 }
