@@ -18,7 +18,7 @@
         }
         public static void HandleMainChoice(int choice1)
         {
-            switch (choice1)
+            switch (choice1) 
             {
                 case 1:
                     int choice2 = BasicFunctionMenu.ChooseFunction();

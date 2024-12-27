@@ -14,7 +14,7 @@ namespace Calculator.Menu
             Console.WriteLine("Please Choose The Function you wanted to use enter the function no.");
             Console.WriteLine(" 1. -- Addition (+)\n 2. -- Subtraction (-)\n 3. -- Multiplication (*)\n 4. -- Division (/)\n 5. -- All Function(+,-,*,/)\n 6. -- Back to Menu");
             Console.Write("Your Choice : ");
-            return Convert.ToInt32(Console.ReadLine());
+            return Convert.ToInt32(Console.ReadLine()); 
         }
 
         public static void HandleFunctionChoice(int choice)
