@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
+using Calculator.Menu;
 
 namespace Calculator.Basic_Function
 {
@@ -15,21 +11,24 @@ namespace Calculator.Basic_Function
             string str = Console.ReadLine();
 
             double result = 0;
-            string pattern = @"^[\d+.]+$";
+            string pattern = @"^[\d\s\+\.]+$";
 
             if (str != null && Regex.IsMatch(str, pattern))
             {
-                double[] nums = str.Split("+").Select(double.Parse).ToArray();
+                double[] nums = str.Split("+").Select(s => s.Trim()).Select(double.Parse).ToArray();
                 foreach (double item in nums)
                 {
                     result += item;
                 }
                 Console.WriteLine($"The result for {String.Join(" + ", nums)} is {result}");
-                Program.ChooseFunction();
+                Console.WriteLine();
+                History.Instance.StoreHistory(String.Join(" + ", nums )+ " = " + result);
+                BasicFunctionMenu.ShowBasicFunctionMenu();
             }
             else
             {
                 Console.WriteLine("There is an error in your input, Please try again");
+                History.Instance.StoreHistory(str + "!! Bad Input");
                 Sum();
             }
         }
