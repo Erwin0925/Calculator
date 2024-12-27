@@ -23,23 +23,23 @@ namespace Calculator.Menu
             {
                 case 1:
                     Addition addition = new Addition();
-                    addition.Sum();
+                    addition.PerformOperation();
                     break;
                 case 2:
                     Subtraction subtraction = new Subtraction();
-                    subtraction.Subtract();
+                    subtraction.PerformOperation();
                     break;
                 case 3:
                     Multiplication multiplication = new Multiplication();
-                    multiplication.Multiply();
+                    multiplication.PerformOperation();
                     break;
                 case 4:
                     Division division = new Division();
-                    division.Divide();
+                    division.PerformOperation();
                     break;
                 case 5:
                     AllFunction allFunction = new AllFunction();
-                    allFunction.Calculate();
+                    allFunction.PerformOperation();
                     break;
                 case 6:
                     MainMenu.GetMenuChoice();

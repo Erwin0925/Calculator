@@ -1,4 +1,6 @@
-﻿namespace Calculator.Menu
+﻿using Calculator.Function;
+
+namespace Calculator.Menu
 {
     internal class MainMenu
     {
