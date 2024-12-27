@@ -7,7 +7,7 @@
 
         private History()
         {
-            historyList = new List<string>();
+            historyList = new List<string>(); 
         }
 
         public static History Instance
