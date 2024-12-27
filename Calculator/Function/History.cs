@@ -30,9 +30,9 @@
         public void ShowHistory()
         {
             Console.WriteLine("Calculation History:");
-            foreach (var record in historyStack)
+            for (int i = 0; i < historyStack.Count; i++)
             {
-                Console.WriteLine(record);
+                Console.WriteLine((i + 1) + " | " + historyStack.ElementAt(i));
             }
         }
     }
