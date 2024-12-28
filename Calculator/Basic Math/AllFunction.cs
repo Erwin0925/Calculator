@@ -34,7 +34,7 @@ namespace Calculator.Basic_Function
             Console.WriteLine($"The result for {str} is {result}");
             Console.WriteLine();
             History.Instance.StoreHistory(str + " = " + result);
-            BasicFunctionMenu.ShowBasicFunctionMenu();
+            BasicFunctionMenu.ChooseFunction();
         }
     }
 }

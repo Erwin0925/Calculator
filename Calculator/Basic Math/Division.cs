@@ -36,7 +36,7 @@ namespace Calculator.Basic_Function
             Console.WriteLine($"The result for {String.Join(" / ", nums)} is {result}");
             Console.WriteLine();
             History.Instance.StoreHistory(String.Join(" / ", nums) + " = " + result);
-            BasicFunctionMenu.ShowBasicFunctionMenu();
+            BasicFunctionMenu.ChooseFunction();
         }
     }
 }
