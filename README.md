@@ -13,6 +13,7 @@
 
 ### What makes it different from other calculator program
 - Allows users to bulk-enter their inputs, provided they select the correct function.
+- Allows users to view their calculated history.
 
 ### This is an excellent C# practice exercise that incorporates key object-oriented programming concepts, including:
 - Classes
