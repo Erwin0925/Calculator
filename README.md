@@ -1,20 +1,20 @@
 # Calculator Console-Based Program
 
-## Function
+### Function
 - Math Function
 - View & Delete History
 
-## Math Function
+### Math Function
 - Addition
 - Subtraction
 - Multiplication
 - Division
 - All-Math-Function
 
-## What makes it different from other calculator program
+### What makes it different from other calculator program
 - Allows users to bulk-enter their inputs, provided they select the correct function.
 
-## This is an excellent C# practice exercise that incorporates key object-oriented programming concepts, including:
+### This is an excellent C# practice exercise that incorporates key object-oriented programming concepts, including:
 - Classes
 - Interfaces
 - Inheritance
@@ -22,7 +22,7 @@
 - Singleton Design Pattern
 - Stack Data Structure
 
-### Sample Output :
+## Sample Output :
 <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
   <tr>
     <td style="width: 50%; text-align: center; padding: 20px;">
