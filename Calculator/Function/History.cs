@@ -1,4 +1,6 @@
-﻿namespace Calculator.Function
+﻿using Calculator.Menu;
+
+namespace Calculator.Function
 {
     internal class History
     {
@@ -30,10 +32,37 @@
         public void ShowHistory()
         {
             Console.WriteLine("Calculation History:");
+            if (historyStack.Count == 0)
+            {
+                Console.WriteLine("No history available, Press 1 to redict to Math Function Menu, Press any other key back to b ack to View History Page");
+                Console.Write("Your Choice : ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+                if (choice == 1)
+                {
+                    BasicFunctionMenu.ChooseFunction();
+                }
+                else
+                {
+                    var viewHistoryMenu1 = new ViewHistoryMenu();
+                    viewHistoryMenu1.ChooseHistoryFunction();
+                }
+            }
             for (int i = 0; i < historyStack.Count; i++)
             {
                 Console.WriteLine((i + 1) + " | " + historyStack.ElementAt(i));
             }
+            Console.WriteLine();
+            var viewHistoryMenu = new ViewHistoryMenu();
+            viewHistoryMenu.ChooseHistoryFunction();
+        }
+
+        public void ClearHistory()
+        {
+            historyStack.Clear();
+            Console.WriteLine();
+            var viewHistoryMenu2 = new ViewHistoryMenu();
+            viewHistoryMenu2.ChooseHistoryFunction();
         }
     }
 }
