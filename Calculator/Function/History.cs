@@ -34,7 +34,7 @@ namespace Calculator.Function
             Console.WriteLine("Calculation History:");
             if (historyStack.Count == 0)
             {
-                Console.WriteLine("No history available, Press 1 to redict to Math Function Menu, Press any other key back to b ack to View History Page");
+                Console.WriteLine("No history available\nPress 1 to redict to Math Function Menu\nPress any other key back to View History Page");
                 Console.Write("Your Choice : ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
@@ -60,6 +60,7 @@ namespace Calculator.Function
         public void ClearHistory()
         {
             historyStack.Clear();
+            Console.WriteLine("Done Clearing All The History");
             Console.WriteLine();
             var viewHistoryMenu2 = new ViewHistoryMenu();
             viewHistoryMenu2.ChooseHistoryFunction();
