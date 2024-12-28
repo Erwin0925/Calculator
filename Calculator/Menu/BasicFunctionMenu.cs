@@ -4,17 +4,13 @@ namespace Calculator.Menu
 {
     internal class BasicFunctionMenu
     {
-        public static void ShowBasicFunctionMenu()
+        public static void ChooseFunction()
         {
-            int choice = ChooseFunction();
-            HandleFunctionChoice(choice);
-        }
-        public static int ChooseFunction()
-        {
-            Console.WriteLine("Please Choose The Function you wanted to use enter the function no.");
+            Console.WriteLine("Please choose the function you want to perform");
             Console.WriteLine(" 1. -- Addition (+)\n 2. -- Subtraction (-)\n 3. -- Multiplication (*)\n 4. -- Division (/)\n 5. -- All Function(+,-,*,/)\n 6. -- Back to Menu");
             Console.Write("Your Choice : ");
-            return Convert.ToInt32(Console.ReadLine()); 
+            int choice =  Convert.ToInt32(Console.ReadLine());
+            HandleFunctionChoice(choice);
         }
 
         public static void HandleFunctionChoice(int choice)
@@ -42,6 +38,7 @@ namespace Calculator.Menu
                     allFunction.PerformOperation();
                     break;
                 case 6:
+                    Console.WriteLine();
                     MainMenu.GetMenuChoice();
                     break;
                 default:

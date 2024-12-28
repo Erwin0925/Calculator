@@ -13,7 +13,7 @@ namespace Calculator.Menu
         {
             Console.WriteLine("Welcome to the Calculator Program ~ ");
             Console.WriteLine("-------------------------------------------------------------------");
-            Console.WriteLine("Please Choose The Function you wanted to use by entering their no.");
+            Console.WriteLine("Please choose the function you want to perform");
             Console.WriteLine(" 1. -- Math Basic Operator\n 2. -- View History\n 3. -- Exit");
             Console.Write("Your Choice : ");
             return Convert.ToInt32(Console.ReadLine());
@@ -23,11 +23,13 @@ namespace Calculator.Menu
             switch (choice1) 
             {
                 case 1:
-                    int choice2 = BasicFunctionMenu.ChooseFunction();
-                    BasicFunctionMenu.HandleFunctionChoice(choice2);
+                    Console.WriteLine();
+                    BasicFunctionMenu.ChooseFunction();
                     break;
                 case 2:
-                    History.Instance.ShowHistory();
+                    Console.WriteLine();
+                    ViewHistoryMenu viewHistoryMenu = new ViewHistoryMenu();
+                    viewHistoryMenu.ChooseHistoryFunction();
                     break;
                 case 3:
                     Environment.Exit(0);
