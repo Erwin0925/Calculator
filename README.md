@@ -24,6 +24,51 @@
 
 ### Sample Output :
 - You can view the sample run and output of this program from the Sample Output folder.
+<table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/4ce1a962-2039-4f50-8614-4171b055c019" alt="Addition" style="width: 400px; height: auto;">
+      <p>Addition</p>
+    </td>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/4bcea606-7bb8-41c5-b83a-48bedcec808b" alt="View History" style="width: 400px; height: auto;">
+      <p>View History</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/204e914b-7472-4c62-a894-975ad9f0340d" alt="View Empty History" style="width: 400px; height: auto;">
+      <p>View Empty History</p>
+    </td>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/4f707c65-123d-45a9-af24-1ea26df35e21" alt="Main Menu" style="width: 400px; height: auto;">
+      <p>Main Menu</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/815569d7-6798-4d07-8391-c4b4d666d66c" alt="Clear History" style="width: 400px; height: auto;">
+      <p>Clear History</p>
+    </td>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/fbc7ce07-ec8f-4b25-a903-4e1d2dec20a8" alt="Back to Main Menu" style="width: 400px; height: auto;">
+      <p>Back to Main Menu</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/d4b3a3b0-8ba8-45d4-b875-90baeab21494" alt="All Math Functions" style="width: 400px; height: auto;">
+      <p>All Math Functions</p>
+    </td>
+    <td style="width: 50%; text-align: center; padding: 20px;">
+      <img src="https://github.com/user-attachments/assets/8f98fd73-266a-4a3e-b134-4f264825cacd" alt="Addition (Wrong Input)" style="width: 400px; height: auto;">
+      <p>Addition (Wrong Input)</p>
+    </td>
+  </tr>
+</table>
+
+
+
 
 # MIT License
 Copyright (c) 2024 Erwin KZS <br>
