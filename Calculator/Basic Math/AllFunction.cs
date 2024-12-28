@@ -10,7 +10,7 @@ namespace Calculator.Basic_Function
     {
         public string GetInput()
         {
-            string pattern = @"^[\d\s\+\-\*\/\.]+$";
+            string pattern = @"^[\d\s\+\-\*\/\.\(\)]+$";
             Console.Write("Please enter the numbers wanted to calculate below: (exp: (1*2+3)/4...) : ");
             string str = Console.ReadLine();
             if (str != null && Regex.IsMatch(str, pattern))
